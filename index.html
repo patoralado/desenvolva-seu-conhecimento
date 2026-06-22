@@ -1,0 +1,1236 @@
+
+<!DOCTYPE html><html lang="pt-BR"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Curso IA para Empregabilidade PRO</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body id="topo">
+
+<div id="login">
+    <div class="login-box">
+        <h2>🔒 Acesso ao Curso</h2>
+
+        <input type="password" id="senha" placeholder="Digite a senha">
+
+        <button onclick="entrar()">Entrar</button>
+
+        <p id="erro"></p>
+    </div>
+</div>
+
+<script>
+function entrar() {
+    if (document.getElementById("senha").value === "ia46533") {
+        document.getElementById("login").style.display = "none";
+    } else {
+        document.getElementById("erro").innerHTML = "Senha incorreta";
+    }
+}
+</script>
+
+<header>
+
+    <div class="slider">
+
+        <img src="img/banner-ia.png" class="slide ativo">
+
+        <img src="img/banner-word.png" class="slide">
+
+        <img src="img/banner-excel.png" class="slide">
+
+        <img src="img/banner-kids.png" class="slide">
+
+    </div>
+
+</header>
+
+<nav>
+
+<button class="menu-btn" onclick="toggleMenu('cursosMenu')">
+📚 Cursos
+</button>
+
+<div id="cursosMenu" class="submenu">
+
+    <button class="curso-btn" onclick="abrirCurso('iaMenu')">
+    🤖 Inteligência Artificial
+    </button>
+
+    <div id="iaMenu" class="curso-menu">
+        <div class="menu-aulas">
+
+        <button class="aula-btn" onclick="abrirAulaIA('a1')">
+        📖 Aula 1
+        </button>
+
+        <button class="aula-btn" onclick="abrirAulaIA('a2')">
+        📝 Aula 2
+        </button>
+
+        <button class="aula-btn" onclick="abrirAulaIA('a3')">
+        🧪 Aula 3
+        </button>
+
+        <button class="aula-btn" onclick="abrirAulaIA('a4')">
+        🏆 Aula 4
+        </button>
+
+</div>
+    </div>
+
+    <button class="curso-btn" onclick="abrirCurso('wordMenu')">
+    📄 Microsoft Word
+    </button>
+
+    <div id="wordMenu" class="curso-menu">
+        <button class="aula-btn" onclick="abrirAulaWord('word1')">
+        📖 Aula 1
+        </button>
+
+        <button class="aula-btn" onclick="abrirAulaWord('word2')">
+        📝 Aula 2
+        </button>
+
+        <button class="aula-btn" onclick="abrirAulaWord('word3')">
+        🎨 Aula 3
+        </button>
+
+        <button class="aula-btn" onclick="abrirAulaWord('word4')">
+        🏆 Aula 4
+        </button>
+
+    </div>
+
+    <button class="curso-btn" onclick="abrirCurso('excelMenu')">
+    📊 Microsoft Excel
+    </button>
+
+    <div id="excelMenu" class="curso-menu">
+        <button class="aula-btn" onclick="abrirAulaExcel('excel1')">
+        📖 Aula 1
+        </button>
+
+        <button class="aula-btn" onclick="abrirAulaExcel('excel2')">
+        📈 Aula 2
+        </button>
+
+        <button class="aula-btn" onclick="abrirAulaExcel('excel3')">
+        📊 Aula 3
+        </button>
+
+        <button class="aula-btn" onclick="abrirAulaExcel('excel4')">
+        🏆 Aula 4
+        </button>
+
+    </div>
+
+    <button class="curso-btn" onclick="abrirCurso('pptMenu')">
+    📽️ Microsoft PowerPoint
+    </button>
+
+    <div id="pptMenu" class="curso-menu">
+        <button class="aula-btn" onclick="abrirAulaPPT('ppt1')">
+        📖 Aula 1
+        </button>
+
+        <button class="aula-btn" onclick="abrirAulaPPT('ppt2')">
+        🎨 Aula 2
+        </button>
+
+        <button class="aula-btn" onclick="abrirAulaPPT('ppt3')">
+        🎬 Aula 3
+        </button>
+
+        <button class="aula-btn" onclick="abrirAulaPPT('ppt4')">
+        🏆 Aula 4
+        </button>
+    </div>
+
+</div>
+
+</nav>
+
+<div class="container">
+
+<section class="card" id="ferramentas">
+<h2>Ferramentas Utilizadas no Curso</h2>
+<ul>
+<li><a href="https://chatgpt.com" target="_blank">ChatGPT</a> - Textos, estudos, currículo e entrevistas.</li>
+<li><a href="https://gemini.google.com" target="_blank">Gemini</a> - Pesquisa e produtividade.</li>
+<li><a href="https://claude.ai" target="_blank">Claude</a> - Documentos longos.</li>
+<li><a href="https://www.canva.com" target="_blank">Canva</a> - Design e apresentações.</li>
+<li><a href="https://gamma.app" target="_blank">Gamma</a> - Slides automáticos.</li>
+<li><a href="https://www.capcut.com" target="_blank">CapCut</a> - Vídeos com IA.</li>
+<li><a href="https://leonardo.ai" target="_blank">Leonardo AI</a> - Geração de imagens.</li>
+<li><a href="https://www.perplexity.ai" target="_blank">Perplexity</a> - Pesquisa com fontes.</li>
+</ul>
+</section>
+
+<section class="card aula-ia ativa" id="a1">
+
+<h2>AULA 1 – FUNDAMENTOS DA IA (90 MIN)</h2>
+
+<h3>Objetivo da Aula</h3>
+
+<p>Nesta aula você aprenderá o que é Inteligência Artificial, como ela funciona, onde está presente no dia a dia e como utilizá-la de forma segura e produtiva.</p>
+
+<h3>Cronograma</h3>
+
+<p>15 min leitura • 20 min demonstração • 35 min laboratório • 20 min desafios</p>
+
+<h3>O Que é Inteligência Artificial?</h3>
+
+<p>A Inteligência Artificial (IA) é uma tecnologia capaz de analisar informações, identificar padrões e gerar respostas. Ela pode criar textos, responder perguntas, gerar imagens, criar apresentações, resumir documentos e auxiliar em diversas tarefas.</p>
+
+<p>Ao contrário do que muitas pessoas pensam, a IA não pensa como um ser humano. Ela utiliza informações aprendidas durante seu treinamento para prever a melhor resposta possível para cada situação.</p>
+
+<p>Hoje a IA está sendo utilizada por empresas, escolas, hospitais, bancos e milhões de pessoas em todo o mundo.</p>
+
+<h3>Onde a IA Está Presente no Seu Dia a Dia?</h3>
+
+<p>Muitas pessoas utilizam Inteligência Artificial diariamente sem perceber.</p>
+
+<ul>
+<li>YouTube recomendando vídeos.</li>
+<li>Netflix sugerindo filmes.</li>
+<li>Spotify recomendando músicas.</li>
+<li>Google Maps sugerindo rotas.</li>
+<li>Instagram mostrando conteúdos personalizados.</li>
+<li>Google Tradutor.</li>
+<li>Assistentes virtuais.</li>
+<li>Filtros de fotos.</li>
+<li>Chatbots de atendimento.</li>
+<li>Ferramentas como ChatGPT e Gemini.</li>
+</ul>
+
+<h3>O Que a IA Consegue Fazer?</h3>
+
+<ul>
+<li>Responder perguntas.</li>
+<li>Criar textos.</li>
+<li>Resumir conteúdos.</li>
+<li>Traduzir idiomas.</li>
+<li>Gerar imagens.</li>
+<li>Criar apresentações.</li>
+<li>Produzir roteiros.</li>
+<li>Gerar ideias.</li>
+<li>Criar planos de estudo.</li>
+<li>Auxiliar na busca por emprego.</li>
+</ul>
+
+<h3>Exemplos Comparativos</h3>
+
+<p>Copie os comandos abaixo e observe como a IA adapta a resposta para diferentes públicos.</p>
+
+<textarea>Explique IA para uma criança.</textarea>
+
+<textarea>Explique IA para um empresário.</textarea>
+
+<textarea>Explique IA para um agricultor.</textarea>
+
+<textarea>Explique IA para um médico.</textarea>
+
+<textarea>Explique IA usando futebol.</textarea>
+
+<textarea>Explique IA usando culinária.</textarea>
+
+<h3>Leitura Guiada</h3>
+
+<p>A qualidade da resposta da IA depende muito da forma como a pergunta é feita. Quanto mais detalhes forem fornecidos, mais personalizada tende a ser a resposta.</p>
+
+<p>Um erro comum é acreditar que a IA sempre está correta. Na verdade, ela pode cometer erros, inventar informações ou apresentar dados desatualizados.</p>
+
+<p>Por isso, sempre que utilizar informações importantes, procure confirmar os dados utilizando fontes confiáveis.</p>
+
+<h3>O Que a IA NÃO Faz Sozinha?</h3>
+
+<p>A Inteligência Artificial não possui consciência, emoções ou experiências de vida.</p>
+
+<p>Ela não sabe se algo é verdadeiro ou falso da mesma forma que um ser humano. Ela apenas gera respostas com base em padrões encontrados durante seu treinamento.</p>
+
+<p>Por isso, o usuário continua sendo responsável por analisar e validar as informações recebidas.</p>
+
+<h3>Mais Exemplos para Testar</h3>
+
+<textarea>Explique IA para um aluno do ensino fundamental.</textarea>
+
+<textarea>Explique IA para um aposentado.</textarea>
+
+<textarea>Explique IA usando um jogo de videogame como exemplo.</textarea>
+
+<textarea>Explique IA usando uma receita de bolo como exemplo.</textarea>
+
+<textarea>Explique IA usando um time de futebol como exemplo.</textarea>
+
+<h3>Atividade 1</h3>
+
+<p>Compare todas as respostas e registre as diferenças encontradas.</p>
+
+<p>Observe quais respostas ficaram mais fáceis de entender e quais ficaram mais técnicas.</p>
+
+<h3>Atividade 2 – Descobrindo o Potencial da IA</h3>
+
+<p>Teste os seguintes comandos:</p>
+
+<textarea>Crie uma receita simples de bolo de chocolate.</textarea>
+
+<textarea>Crie uma rotina de estudos para aprender informática.</textarea>
+
+<textarea>Explique o que é Excel para iniciantes.</textarea>
+
+<textarea>Crie uma lista de profissões do futuro.</textarea>
+
+<textarea>Monte uma viagem de 3 dias para São Paulo.</textarea>
+
+<p>Analise os resultados e registre suas observações.</p>
+
+<h3>Teste de Confiabilidade</h3>
+
+<p>Faça as perguntas abaixo para diferentes IAs e compare os resultados.</p>
+
+<ul>
+<li>Qual é a capital da França?</li>
+<li>Qual é a capital do Japão?</li>
+<li>Quem inventou o telefone?</li>
+<li>Quem criou o Facebook?</li>
+<li>Qual é a população do Brasil?</li>
+</ul>
+
+<h3>Ferramentas Para Explorar</h3>
+
+<ul>
+<li>ChatGPT</li>
+<li>Gemini</li>
+<li>Claude</li>
+<li>Perplexity</li>
+</ul>
+
+<p>Faça a mesma pergunta em cada ferramenta e compare as respostas.</p>
+
+<h3>Laboratório Completo</h3>
+
+<p>Pesquise 10 exemplos de Inteligência Artificial que você pode utilizar no seu dia a dia.</p>
+
+<p>Para cada exemplo identifique:</p>
+
+<ul>
+<li>Benefício.</li>
+<li>Risco.</li>
+<li>Impacto profissional.</li>
+<li>Nível de confiabilidade.</li>
+</ul>
+
+<h3>Projeto Final da Aula</h3>
+
+<p>Escolha uma atividade do seu dia a dia e utilize a IA para ajudar a resolver um problema ou criar algo útil.</p>
+
+<p>Exemplos:</p>
+
+<ul>
+<li>Organizar estudos.</li>
+<li>Criar um plano financeiro.</li>
+<li>Planejar uma viagem.</li>
+<li>Montar uma rotina saudável.</li>
+<li>Criar um roteiro de vídeo.</li>
+<li>Criar um plano para conseguir emprego.</li>
+</ul>
+
+<h3>Desafio Mestre</h3>
+
+<p>Faça a IA cometer um erro, identifique o problema, corrija a resposta e documente todo o processo.</p>
+
+</section>
+
+<section class="card aula-ia" id="a2">
+
+<h2>AULA 2 – CURRÍCULOS PROFISSIONAIS COM IA (90 MIN)</h2>
+
+<h3>Objetivo da Aula</h3>
+
+<p>Nesta aula você aprenderá a utilizar a Inteligência Artificial para criar, melhorar e adaptar currículos profissionais. Ao final da aula você terá seu próprio currículo pronto para ser utilizado em processos seletivos.</p>
+
+<h3>O Que é um Currículo?</h3>
+
+<p>O currículo é um documento utilizado para apresentar suas informações profissionais para empresas e recrutadores. Ele normalmente é o primeiro contato entre o candidato e a empresa.</p>
+
+<p>Um currículo bem organizado facilita a análise do recrutador e aumenta as chances de ser chamado para uma entrevista.</p>
+
+<p>Mesmo pessoas sem experiência profissional podem criar bons currículos destacando cursos, conhecimentos, projetos, atividades escolares, habilidades e objetivos profissionais.</p>
+
+<h3>Leitura Guiada</h3>
+
+<p>A Inteligência Artificial pode ajudar na criação de currículos profissionais em poucos minutos. Ela pode organizar informações, corrigir erros, melhorar textos e adaptar currículos para diferentes vagas.</p>
+
+<p>Porém, é importante revisar todas as informações geradas pela IA. Nunca envie um currículo sem verificar se os dados estão corretos.</p>
+
+<p>A IA é uma ferramenta de apoio. A responsabilidade final pelo currículo sempre será do candidato.</p>
+
+<h3>Os Erros Mais Comuns em Currículos</h3>
+
+<ul>
+<li>Erros de português.</li>
+<li>Informações falsas.</li>
+<li>Dados de contato incorretos.</li>
+<li>Currículo muito longo.</li>
+<li>Falta de objetivo profissional.</li>
+<li>Experiências mal descritas.</li>
+<li>Formatação desorganizada.</li>
+<li>Informações desatualizadas.</li>
+</ul>
+
+<h3>Como Criar Bons Prompts</h3>
+
+<p>Quanto mais detalhes você fornecer para a IA, melhor será o resultado.</p>
+
+<p><strong>Modelo:</strong> Persona + Objetivo + Contexto + Formato</p>
+
+<h3>Exercício Progressivo</h3>
+
+<textarea>Faça um currículo.</textarea>
+
+<textarea>Crie um currículo para primeiro emprego.</textarea>
+
+<textarea>Você é um recrutador especialista. Crie um currículo profissional para jovem aprendiz.</textarea>
+
+<textarea>Crie um currículo profissional para uma pessoa de 18 anos procurando sua primeira oportunidade na área administrativa.</textarea>
+
+<h3>Exemplos Práticos</h3>
+
+<textarea>Crie um currículo para primeiro emprego.</textarea>
+
+<textarea>Crie um currículo para vaga de vendedor.</textarea>
+
+<textarea>Crie um currículo para auxiliar administrativo.</textarea>
+
+<textarea>Crie um currículo para operador de caixa.</textarea>
+
+<textarea>Crie um currículo para recepcionista.</textarea>
+
+<textarea>Crie uma carta de apresentação para auxiliar administrativo.</textarea>
+
+<textarea>Analise meu currículo e sugira melhorias.</textarea>
+
+<textarea>Avalie meu currículo como se fosse um recrutador profissional.</textarea>
+
+<h3>Exemplos de Currículos para Diferentes Perfis</h3>
+
+<textarea>Crie um currículo para uma pessoa sem experiência profissional.</textarea>
+
+<textarea>Crie um currículo para Jovem Aprendiz.</textarea>
+
+<textarea>Crie um currículo para Recepcionista.</textarea>
+
+<textarea>Crie um currículo para Auxiliar Administrativo.</textarea>
+
+<textarea>Crie um currículo para Operador de Caixa.</textarea>
+
+<textarea>Crie um currículo para Vendedor.</textarea>
+
+<textarea>Crie um currículo para Estoquista.</textarea>
+
+<textarea>Crie um currículo para Assistente Financeiro.</textarea>
+
+<h3>20 Missões</h3>
+
+<ul>
+<li>Criar currículo.</li>
+<li>Melhorar currículo.</li>
+<li>Adaptar currículo para área administrativa.</li>
+<li>Adaptar currículo para vendas.</li>
+<li>Adaptar currículo para atendimento.</li>
+<li>Criar objetivo profissional.</li>
+<li>Criar resumo profissional.</li>
+<li>Criar carta de apresentação.</li>
+<li>Criar email profissional.</li>
+<li>Criar mensagem para recrutador.</li>
+<li>Gerar feedback do currículo.</li>
+<li>Corrigir erros de português.</li>
+<li>Melhorar a apresentação.</li>
+<li>Destacar habilidades.</li>
+<li>Destacar cursos.</li>
+<li>Criar currículo para primeiro emprego.</li>
+<li>Criar currículo para estágio.</li>
+<li>Criar currículo para Jovem Aprendiz.</li>
+<li>Analisar currículo como RH.</li>
+<li>Atribuir nota ao currículo.</li>
+</ul>
+
+<h3>Como Melhorar um Currículo com IA</h3>
+
+<p>A Inteligência Artificial consegue analisar currículos e identificar pontos de melhoria.</p>
+
+<p>Ela pode sugerir palavras mais profissionais, melhorar descrições de experiências e adaptar o currículo para vagas específicas.</p>
+
+<p>Uma boa prática é sempre pedir para a IA revisar seu currículo antes de enviá-lo.</p>
+
+<h3>Projeto Final da Aula</h3>
+
+<p>Cada aluno deverá criar seu currículo pessoal completo utilizando Inteligência Artificial.</p>
+
+<p>Depois disso deverá utilizar a IA para:</p>
+
+<ul>
+<li>Corrigir erros.</li>
+<li>Melhorar a apresentação.</li>
+<li>Adaptar para uma vaga real.</li>
+<li>Gerar uma carta de apresentação.</li>
+<li>Receber uma avaliação completa.</li>
+<li>Receber uma nota de 0 a 10.</li>
+</ul>
+
+<h3>Desafio Avançado</h3>
+
+<p>Encontre uma vaga real na internet e utilize a Inteligência Artificial para criar um currículo totalmente adaptado para essa oportunidade.</p>
+
+<p>Ao final, solicite que a IA atue como recrutador e faça uma avaliação completa do seu currículo apontando pontos fortes, pontos fracos e sugestões de melhoria.</p>
+
+</section>
+
+<section class="card aula-ia" id="a3">
+<h2>AULA 3 – ENTREVISTAS DE EMPREGO COM IA (90 MIN)</h2>
+
+<h3>Objetivo da Aula</h3>
+<p>Nesta aula você aprenderá a utilizar a Inteligência Artificial para se preparar para entrevistas de emprego, melhorar suas respostas, ganhar confiança e aumentar suas chances de contratação.</p>
+
+<h3>Leitura Guiada</h3>
+
+<p>Muitas pessoas possuem um bom currículo, mas não conseguem se destacar durante uma entrevista. Isso acontece porque ficam nervosas, não sabem responder algumas perguntas ou não conhecem a empresa para a qual estão se candidatando.</p>
+
+<p>A Inteligência Artificial pode ser utilizada como um treinador pessoal. Ela consegue simular recrutadores, gerar perguntas, corrigir respostas e fornecer feedback para ajudar você a melhorar.</p>
+
+<p>Antes de uma entrevista é importante pesquisar sobre a empresa, conhecer a vaga desejada e praticar suas respostas. Quanto mais preparado você estiver, maior será sua confiança.</p>
+
+<h3>Perguntas Mais Comuns em Entrevistas</h3>
+
+<ul>
+<li>Fale sobre você.</li>
+<li>Por que deseja trabalhar nesta empresa?</li>
+<li>Quais são seus pontos fortes?</li>
+<li>Quais são seus pontos fracos?</li>
+<li>Onde você se vê daqui a cinco anos?</li>
+<li>Por que devemos contratar você?</li>
+<li>Como você lida com pressão?</li>
+<li>Como trabalha em equipe?</li>
+<li>Conte uma situação difícil que você resolveu.</li>
+<li>Qual foi sua maior conquista?</li>
+</ul>
+
+<h3>Exemplos de Prompts para Treinamento</h3>
+
+<textarea>Você é um recrutador. Faça uma entrevista para Jovem Aprendiz.</textarea>
+
+<textarea>Faça uma entrevista para Auxiliar Administrativo com 10 perguntas.</textarea>
+
+<textarea>Avalie minhas respostas e me dê uma nota de 0 a 10.</textarea>
+
+<textarea>Quais erros estou cometendo nesta entrevista?</textarea>
+
+<textarea>Como responder a pergunta: "Qual é seu maior defeito?"</textarea>
+
+<textarea>Me ensine a responder perguntas difíceis de entrevista.</textarea>
+
+<h3>Atividade 1</h3>
+
+<p>Realize uma entrevista simulada utilizando ChatGPT ou Gemini e responda pelo menos 10 perguntas.</p>
+
+<h3>Atividade 2</h3>
+
+<p>Copie suas respostas e solicite que a IA faça uma avaliação completa apontando pontos fortes e pontos de melhoria.</p>
+
+<h3>Atividade 3</h3>
+
+<p>Peça para a IA gerar uma entrevista específica para uma das seguintes vagas:</p>
+
+<ul>
+<li>Jovem Aprendiz</li>
+<li>Recepcionista</li>
+<li>Auxiliar Administrativo</li>
+<li>Operador de Caixa</li>
+<li>Vendedor</li>
+<li>Atendente</li>
+<li>Estoquista</li>
+<li>Assistente Financeiro</li>
+</ul>
+
+<h3>Dicas de Comportamento Profissional</h3>
+
+<ul>
+<li>Chegue com antecedência.</li>
+<li>Vista-se adequadamente.</li>
+<li>Mantenha contato visual.</li>
+<li>Escute atentamente.</li>
+<li>Responda com clareza.</li>
+<li>Evite respostas muito curtas.</li>
+<li>Demonstre interesse pela vaga.</li>
+<li>Pesquise sobre a empresa.</li>
+</ul>
+
+<h3>Desafio Diamante</h3>
+
+<p>Realize uma entrevista completa com a IA para uma vaga real encontrada na internet. Ao final, solicite que a IA atribua uma nota de 0 a 10 para seu desempenho e apresente um plano de melhoria profissional.</p>
+
+</section>
+
+<section class="card aula-ia" id="a4">
+
+<h2>AULA 4 – CRIAÇÃO DE IMAGENS, APRESENTAÇÕES E VÍDEOS COM IA (90 MIN)</h2>
+
+<h3>Objetivo da Aula</h3>
+
+<p>Nesta aula você aprenderá a utilizar Inteligência Artificial para criar imagens profissionais, apresentações automáticas, vídeos e campanhas completas de marketing utilizando ferramentas modernas e gratuitas.</p>
+
+<h3>Ferramentas Utilizadas</h3>
+
+<ul>
+<li>Canva – Design gráfico e apresentações.</li>
+<li>Gamma – Criação automática de slides.</li>
+<li>Leonardo AI – Geração de imagens.</li>
+<li>CapCut – Edição e criação de vídeos.</li>
+</ul>
+
+<h3>Leitura Guiada</h3>
+
+<p>As ferramentas de Inteligência Artificial evoluíram muito nos últimos anos. Hoje é possível criar imagens profissionais, apresentações completas e vídeos em poucos minutos utilizando apenas descrições em texto.</p>
+
+<p>O segredo para obter bons resultados é aprender a criar instruções detalhadas. Quanto mais informações você fornecer para a IA, mais próximo ficará do resultado desejado.</p>
+
+<p>Empresas, escolas, criadores de conteúdo e profissionais de diversas áreas já utilizam essas tecnologias diariamente para economizar tempo e aumentar a produtividade.</p>
+
+<h3>O Que a IA Pode Criar?</h3>
+
+<ul>
+<li>Logotipos.</li>
+<li>Banners.</li>
+<li>Posts para redes sociais.</li>
+<li>Apresentações profissionais.</li>
+<li>Vídeos promocionais.</li>
+<li>Miniaturas para YouTube.</li>
+<li>Convites digitais.</li>
+<li>Stories para Instagram.</li>
+<li>Campanhas publicitárias.</li>
+<li>Materiais educacionais.</li>
+</ul>
+
+<h3>Exemplos para Imagens</h3>
+
+<textarea>Crie uma cidade futurista sustentável utilizando energia solar.</textarea>
+
+<textarea>Crie uma escola tecnológica do futuro com robôs auxiliando alunos.</textarea>
+
+<textarea>Crie um escritório moderno utilizando Inteligência Artificial.</textarea>
+
+<textarea>Crie um robô ajudando estudantes em uma sala de aula.</textarea>
+
+<textarea>Crie uma empresa futurista utilizando tecnologia avançada.</textarea>
+
+<textarea>Crie uma biblioteca inteligente controlada por IA.</textarea>
+
+<h3>Atividade 1</h3>
+
+<p>Crie pelo menos 5 imagens diferentes utilizando Leonardo AI ou Canva e compare os resultados.</p>
+
+<h3>Como Melhorar um Prompt de Imagem</h3>
+
+<p>Prompt simples:</p>
+
+<textarea>Crie uma escola.</textarea>
+
+<p>Prompt profissional:</p>
+
+<textarea>Crie uma escola futurista com arquitetura moderna, tecnologia avançada, robôs auxiliando estudantes, iluminação natural e estilo realista em alta qualidade.</textarea>
+
+<p>Compare os resultados obtidos.</p>
+
+<h3>Exemplos para Apresentações</h3>
+
+<textarea>Crie uma apresentação de 10 slides sobre Inteligência Artificial.</textarea>
+
+<textarea>Crie uma apresentação sobre segurança digital para adolescentes.</textarea>
+
+<textarea>Crie uma apresentação sobre profissões do futuro.</textarea>
+
+<textarea>Crie uma apresentação sobre educação tecnológica.</textarea>
+
+<textarea>Crie uma apresentação sobre empreendedorismo digital.</textarea>
+
+<h3>Atividade 2</h3>
+
+<p>Utilizando o Gamma ou Canva, crie uma apresentação completa com no mínimo 10 slides.</p>
+
+<h3>Exemplos para Vídeos</h3>
+
+<textarea>Crie um roteiro de vídeo de 60 segundos explicando o que é Inteligência Artificial.</textarea>
+
+<textarea>Crie um vídeo promocional para uma feira de profissões.</textarea>
+
+<textarea>Crie um roteiro para divulgar um curso de informática.</textarea>
+
+<textarea>Crie um vídeo motivacional para estudantes.</textarea>
+
+<textarea>Crie um vídeo explicando a importância da tecnologia na educação.</textarea>
+
+<h3>Atividade 3</h3>
+
+<p>Utilizando CapCut, crie um vídeo de até 1 minuto baseado em um roteiro gerado por IA.</p>
+
+<h3>Projeto de Marketing Completo</h3>
+
+<p>Utilize Inteligência Artificial para criar uma campanha completa.</p>
+
+<ol>
+<li>Nome do projeto.</li>
+<li>Slogan.</li>
+<li>Público-alvo.</li>
+<li>Logotipo.</li>
+<li>Banner.</li>
+<li>Story para Instagram.</li>
+<li>Post para redes sociais.</li>
+<li>Email promocional.</li>
+<li>Mensagem para WhatsApp.</li>
+<li>Vídeo promocional.</li>
+<li>Apresentação.</li>
+<li>Cronograma de divulgação.</li>
+</ol>
+
+<h3>Exemplos de Prompts Profissionais</h3>
+
+<textarea>Crie um banner profissional para uma feira de profissões.</textarea>
+
+<textarea>Crie uma imagem futurista sobre empregabilidade.</textarea>
+
+<textarea>Crie um post Instagram para curso de informática.</textarea>
+
+<textarea>Crie uma campanha visual para incentivar jovens a estudar tecnologia.</textarea>
+
+<textarea>Crie um logotipo moderno para uma startup de Inteligência Artificial.</textarea>
+
+<h3>Projeto Final da Aula</h3>
+
+<p>Cada aluno deverá criar uma campanha completa utilizando texto, imagem, apresentação e vídeo.</p>
+
+<p>Todos os materiais deverão ser produzidos com apoio da Inteligência Artificial.</p>
+
+<h3>Desafio Mestre</h3>
+
+<p>Escolha uma empresa, curso, evento ou negócio fictício e crie uma campanha completa de divulgação utilizando as quatro ferramentas estudadas nesta aula.</p>
+
+<p>Ao final, apresente os resultados produzidos e explique como a Inteligência Artificial ajudou em cada etapa do processo.</p>
+
+</section>
+
+<section class="card aula-word" id="word1">
+
+<h2>AULA 1 – CONHECENDO O MICROSOFT WORD (90 MIN)</h2>
+
+<h3>Objetivo da Aula</h3>
+
+<p>Aprender a utilizar o Microsoft Word, conhecer a interface, criar documentos, salvar arquivos e realizar formatações básicas.</p>
+
+<h3>Leitura Guiada</h3>
+
+<p>O Microsoft Word é um dos programas mais utilizados no mundo para criação de documentos. Empresas, escolas, universidades e órgãos públicos utilizam o Word para criar relatórios, contratos, currículos, cartas e diversos outros documentos.</p>
+
+<p>Ao abrir o Word encontramos a Faixa de Opções, onde estão organizadas as ferramentas principais. Cada guia possui funções específicas para edição e formatação.</p>
+
+<p>Os documentos criados no Word são compostos por textos, imagens, tabelas e outros elementos que podem ser organizados profissionalmente.</p>
+
+<h3>Conhecendo a Interface</h3>
+
+<ul>
+<li>Barra de Título</li>
+<li>Faixa de Opções</li>
+<li>Área de Digitação</li>
+<li>Barra de Rolagem</li>
+<li>Barra de Status</li>
+<li>Menu Arquivo</li>
+</ul>
+
+<h3>Exercícios Práticos</h3>
+
+<textarea>Digite uma apresentação pessoal com 10 linhas.</textarea>
+
+<textarea>Digite uma carta para um amigo.</textarea>
+
+<textarea>Digite uma redação sobre tecnologia.</textarea>
+
+<textarea>Digite um texto explicando sua profissão dos sonhos.</textarea>
+
+<h3>Formatações Básicas</h3>
+
+<ul>
+<li>Negrito</li>
+<li>Itálico</li>
+<li>Sublinhado</li>
+<li>Tamanho da Fonte</li>
+<li>Cor da Fonte</li>
+<li>Alinhamento</li>
+</ul>
+
+<h3>Desafio</h3>
+
+<p>Criar um documento profissional contendo nome, idade, objetivos profissionais e um texto de apresentação.</p>
+
+</section>
+
+<section class="card aula-word" id="word2">
+
+<h2>AULA 2 – FORMATAÇÃO PROFISSIONAL (90 MIN)</h2>
+
+<h3>Leitura Guiada</h3>
+
+<p>Uma boa formatação torna o documento mais agradável e profissional. Empresas valorizam documentos organizados e visualmente limpos.</p>
+
+<p>O Word permite controlar margens, espaçamento, alinhamento e estilos de texto.</p>
+
+<h3>Recursos da Aula</h3>
+
+<ul>
+<li>Fonte</li>
+<li>Parágrafo</li>
+<li>Espaçamento</li>
+<li>Margens</li>
+<li>Quebra de Página</li>
+<li>Cabeçalho</li>
+<li>Rodapé</li>
+</ul>
+
+<h3>Exercícios</h3>
+
+<textarea>Formatar um texto com título centralizado.</textarea>
+
+<textarea>Formatar uma notícia de jornal.</textarea>
+
+<textarea>Criar uma carta comercial.</textarea>
+
+<textarea>Criar um documento com cabeçalho e rodapé.</textarea>
+
+<h3>Projeto da Aula</h3>
+
+<p>Criar um relatório profissional de uma página.</p>
+
+</section>
+
+<section class="card aula-word" id="word3">
+
+<h2>AULA 3 – TABELAS, IMAGENS E ELEMENTOS VISUAIS (90 MIN)</h2>
+
+<h3>Leitura Guiada</h3>
+
+<p>Documentos modernos utilizam tabelas, imagens e gráficos para facilitar a compreensão das informações.</p>
+
+<p>O Word possui ferramentas que permitem inserir e organizar esses elementos de forma profissional.</p>
+
+<h3>Ferramentas da Aula</h3>
+
+<ul>
+<li>Tabelas</li>
+<li>Imagens</li>
+<li>Ícones</li>
+<li>Formas</li>
+<li>WordArt</li>
+<li>Caixas de Texto</li>
+</ul>
+
+<h3>Exercícios</h3>
+
+<textarea>Criar uma tabela de notas escolares.</textarea>
+
+<textarea>Criar uma tabela de gastos mensais.</textarea>
+
+<textarea>Inserir uma imagem e adicionar legenda.</textarea>
+
+<textarea>Criar um cartaz simples utilizando imagens e texto.</textarea>
+
+<h3>Projeto da Aula</h3>
+
+<p>Criar um folder informativo utilizando tabelas e imagens.</p>
+
+</section>
+
+<section class="card aula-word" id="word4">
+
+<h2>AULA 4 – DOCUMENTOS PROFISSIONAIS E CURRÍCULO (90 MIN)</h2>
+
+<h3>Leitura Guiada</h3>
+
+<p>O Word é amplamente utilizado para criar currículos, contratos, propostas comerciais e relatórios profissionais.</p>
+
+<p>Um currículo bem estruturado aumenta as chances de ser notado pelos recrutadores.</p>
+
+<h3>Documentos Profissionais</h3>
+
+<ul>
+<li>Currículo</li>
+<li>Carta de Apresentação</li>
+<li>Relatório</li>
+<li>Proposta Comercial</li>
+<li>Ofício</li>
+<li>Memorando</li>
+</ul>
+
+<h3>Exercícios</h3>
+
+<textarea>Criar currículo para primeiro emprego.</textarea>
+
+<textarea>Criar currículo para vaga administrativa.</textarea>
+
+<textarea>Criar carta de apresentação.</textarea>
+
+<textarea>Criar relatório profissional.</textarea>
+
+<h3>Projeto Final</h3>
+
+<p>Criar um currículo completo, profissional e pronto para envio.</p>
+
+</section>
+
+<section class="card aula-excel" id="excel1">
+
+<h2>AULA 1 – CONHECENDO O MICROSOFT EXCEL (90 MIN)</h2>
+
+<h3>Objetivo da Aula</h3>
+
+<p>Aprender a utilizar a interface do Excel, criar planilhas simples e compreender como organizar informações em linhas e colunas.</p>
+
+<h3>Leitura Guiada</h3>
+
+<p>O Microsoft Excel é um dos programas mais utilizados no mercado de trabalho para organização de dados, cálculos e relatórios. Empresas utilizam Excel para controlar estoque, vendas, clientes, finanças e produtividade.</p>
+
+<p>Uma planilha é formada por linhas e colunas. O encontro entre uma linha e uma coluna forma uma célula. Cada célula possui um endereço único, como A1, B5 ou C10.</p>
+
+<p>O Excel permite armazenar informações e realizar cálculos automáticos, economizando tempo e reduzindo erros.</p>
+
+<h3>Conhecendo a Interface</h3>
+
+<ul>
+<li>Linhas</li>
+<li>Colunas</li>
+<li>Células</li>
+<li>Barra de Fórmulas</li>
+<li>Planilhas</li>
+<li>Faixa de Opções</li>
+</ul>
+
+<h3>Exercícios Práticos</h3>
+
+<textarea>Crie uma tabela com Nome, Idade e Cidade para 10 pessoas.</textarea>
+
+<textarea>Crie uma lista com seus filmes favoritos.</textarea>
+
+<textarea>Crie uma agenda de contatos.</textarea>
+
+<textarea>Crie uma tabela com produtos e preços.</textarea>
+
+<h3>Atividade</h3>
+
+<p>Montar uma planilha com 20 produtos contendo nome, quantidade e valor.</p>
+
+<h3>Desafio</h3>
+
+<p>Criar uma planilha completa de cadastro de alunos.</p>
+
+</section>
+
+<section class="card aula-excel" id="excel2">
+
+<h2>AULA 2 – FÓRMULAS E CÁLCULOS (90 MIN)</h2>
+
+<h3>Leitura Guiada</h3>
+
+<p>As fórmulas são o principal recurso do Excel. Elas permitem realizar cálculos automaticamente, economizando tempo e aumentando a precisão.</p>
+
+<p>Uma fórmula sempre começa com o sinal de igual (=).</p>
+
+<h3>Fórmulas da Aula</h3>
+
+<ul>
+<li>=SOMA()</li>
+<li>=MÉDIA()</li>
+<li>=MÁXIMO()</li>
+<li>=MÍNIMO()</li>
+<li>=CONT.NÚM()</li>
+<li>Porcentagem</li>
+</ul>
+
+<h3>Exemplos</h3>
+
+<textarea>=SOMA(B2:B10)</textarea>
+
+<textarea>=MÉDIA(B2:B10)</textarea>
+
+<textarea>=MÁXIMO(B2:B10)</textarea>
+
+<textarea>=MÍNIMO(B2:B10)</textarea>
+
+<h3>Exercícios</h3>
+
+<p>Criar uma planilha de notas de alunos e calcular médias.</p>
+
+<p>Criar uma planilha de vendas e calcular total vendido.</p>
+
+<p>Calcular descontos utilizando porcentagem.</p>
+
+<h3>Desafio</h3>
+
+<p>Criar uma planilha de folha de pagamento com cálculos automáticos.</p>
+
+</section>
+
+<section class="card aula-excel" id="excel3">
+
+<h2>AULA 3 – CONTROLE FINANCEIRO E GRÁFICOS (90 MIN)</h2>
+
+<h3>Leitura Guiada</h3>
+
+<p>O Excel é amplamente utilizado para organizar informações financeiras. Além dos cálculos, é possível criar gráficos para facilitar a visualização dos resultados.</p>
+
+<h3>Exemplos de Planilhas</h3>
+
+<ul>
+<li>Controle de Gastos</li>
+<li>Controle de Vendas</li>
+<li>Controle de Estoque</li>
+<li>Controle de Clientes</li>
+<li>Fluxo de Caixa</li>
+</ul>
+
+<h3>Exercícios</h3>
+
+<textarea>Crie uma planilha de gastos mensais.</textarea>
+
+<textarea>Crie uma planilha de controle de estoque.</textarea>
+
+<textarea>Crie uma planilha de vendas.</textarea>
+
+<textarea>Crie um gráfico de vendas mensais.</textarea>
+
+<h3>Projeto da Aula</h3>
+
+<p>Criar uma planilha financeira completa com gráficos.</p>
+
+<h3>Desafio</h3>
+
+<p>Montar um fluxo de caixa simples para uma pequena empresa.</p>
+
+</section>
+
+<section class="card aula-excel" id="excel4">
+
+<h2>AULA 4 – EXCEL PARA O MERCADO DE TRABALHO (90 MIN)</h2>
+
+<h3>Leitura Guiada</h3>
+
+<p>O Excel é uma das habilidades mais solicitadas pelas empresas. Profissionais que dominam planilhas possuem vantagem em processos seletivos.</p>
+
+<p>Conhecimentos em Excel são exigidos em áreas administrativas, financeiras, comerciais e logísticas.</p>
+
+<h3>Projetos Profissionais</h3>
+
+<ul>
+<li>Relatório de Vendas</li>
+<li>Controle de Estoque</li>
+<li>Controle Financeiro</li>
+<li>Dashboard Básico</li>
+<li>Relatório de Desempenho</li>
+</ul>
+
+<h3>Exercícios</h3>
+
+<textarea>Crie um relatório mensal de vendas.</textarea>
+
+<textarea>Crie um controle financeiro empresarial.</textarea>
+
+<textarea>Crie uma planilha de metas.</textarea>
+
+<textarea>Crie um dashboard simples com gráficos.</textarea>
+
+<h3>Projeto Final</h3>
+
+<p>Criar uma planilha profissional completa contendo cadastro, cálculos, gráficos e indicadores.</p>
+
+</section>
+
+<section class="card aula-ppt" id="ppt1">
+
+<h2>AULA 1 – CONHECENDO O MICROSOFT POWERPOINT (90 MIN)</h2>
+
+<h3>Objetivo da Aula</h3>
+
+<p>Aprender a utilizar a interface do PowerPoint, criar apresentações e compreender os elementos básicos de um slide profissional.</p>
+
+<h3>Leitura Guiada</h3>
+
+<p>O Microsoft PowerPoint é um software utilizado para criar apresentações visuais. Empresas, escolas e universidades utilizam apresentações para transmitir informações de forma organizada e profissional.</p>
+
+<p>Uma apresentação é composta por slides. Cada slide pode conter textos, imagens, gráficos, vídeos, ícones e animações.</p>
+
+<p>Uma boa apresentação deve ser simples, objetiva e visualmente agradável. O excesso de texto pode dificultar a compreensão do público.</p>
+
+<h3>Conhecendo a Interface</h3>
+
+<ul>
+<li>Slides</li>
+<li>Layouts</li>
+<li>Temas</li>
+<li>Caixas de Texto</li>
+<li>Imagens</li>
+<li>Transições</li>
+<li>Animações</li>
+</ul>
+
+<h3>Exercícios Práticos</h3>
+
+<textarea>Crie uma apresentação com 5 slides sobre você.</textarea>
+
+<textarea>Crie uma apresentação sobre sua profissão dos sonhos.</textarea>
+
+<textarea>Crie uma apresentação sobre sua cidade.</textarea>
+
+<textarea>Crie uma apresentação sobre um hobby que você gosta.</textarea>
+
+<h3>Atividade</h3>
+
+<p>Montar uma apresentação de 8 slides apresentando sua trajetória pessoal.</p>
+
+<h3>Desafio</h3>
+
+<p>Criar uma apresentação profissional de apresentação pessoal para entrevista de emprego.</p>
+
+</section>
+
+<section class="card aula-ppt" id="ppt2">
+
+<h2>AULA 2 – DESIGN E CRIAÇÃO DE SLIDES PROFISSIONAIS (90 MIN)</h2>
+
+<h3>Leitura Guiada</h3>
+
+<p>Um bom slide não depende apenas do conteúdo. O design influencia diretamente na atenção e compreensão do público.</p>
+
+<p>É importante utilizar cores harmoniosas, fontes legíveis e imagens de qualidade.</p>
+
+<p>Slides profissionais normalmente possuem pouco texto e utilizam recursos visuais para transmitir informações.</p>
+
+<h3>Boas Práticas</h3>
+
+<ul>
+<li>Evitar excesso de texto</li>
+<li>Utilizar fontes legíveis</li>
+<li>Manter padrão visual</li>
+<li>Utilizar imagens relevantes</li>
+<li>Organizar informações</li>
+</ul>
+
+<h3>Exercícios</h3>
+
+<textarea>Crie um slide profissional para divulgar um curso.</textarea>
+
+<textarea>Crie um slide para apresentar uma empresa.</textarea>
+
+<textarea>Crie um slide explicando Inteligência Artificial.</textarea>
+
+<textarea>Crie um slide apresentando um produto.</textarea>
+
+<h3>Projeto da Aula</h3>
+
+<p>Criar uma apresentação de 10 slides sobre uma empresa fictícia.</p>
+
+<h3>Desafio</h3>
+
+<p>Transformar um slide simples em um slide profissional utilizando imagens, ícones e organização visual.</p>
+
+</section>
+
+<section class="card aula-ppt" id="ppt3">
+
+<h2>AULA 3 – ANIMAÇÕES, TRANSIÇÕES E APRESENTAÇÃO AO PÚBLICO (90 MIN)</h2>
+
+<h3>Leitura Guiada</h3>
+
+<p>As animações e transições ajudam a tornar a apresentação mais dinâmica. Porém, quando utilizadas em excesso, podem distrair o público.</p>
+
+<p>O objetivo principal é destacar informações importantes sem comprometer a clareza da apresentação.</p>
+
+<p>Além dos slides, a forma de apresentação do conteúdo também é essencial para transmitir confiança e profissionalismo.</p>
+
+<h3>Recursos da Aula</h3>
+
+<ul>
+<li>Transições</li>
+<li>Animações</li>
+<li>Inserção de Vídeos</li>
+<li>Inserção de Áudio</li>
+<li>Apresentação em Tela Cheia</li>
+</ul>
+
+<h3>Exercícios</h3>
+
+<textarea>Adicione transições em todos os slides.</textarea>
+
+<textarea>Crie animações para títulos.</textarea>
+
+<textarea>Insira um vídeo em sua apresentação.</textarea>
+
+<textarea>Monte uma apresentação para apresentar um produto.</textarea>
+
+<h3>Atividade</h3>
+
+<p>Apresentar uma apresentação de 5 minutos para a turma.</p>
+
+<h3>Desafio</h3>
+
+<p>Construir uma apresentação profissional utilizando animações de forma equilibrada.</p>
+
+</section>
+
+<section class="card aula-ppt" id="ppt4">
+
+<h2>AULA 4 – POWERPOINT PARA EMPREGABILIDADE E PROJETOS (90 MIN)</h2>
+
+<h3>Leitura Guiada</h3>
+
+<p>Muitas empresas utilizam apresentações para reuniões, treinamentos, vendas e divulgação de projetos.</p>
+
+<p>Dominar o PowerPoint é uma habilidade valorizada em diversas áreas profissionais.</p>
+
+<p>Apresentações profissionais demonstram organização, criatividade e capacidade de comunicação.</p>
+
+<h3>Projetos Profissionais</h3>
+
+<ul>
+<li>Apresentação Empresarial</li>
+<li>Treinamento Interno</li>
+<li>Plano de Negócio</li>
+<li>Relatório de Resultados</li>
+<li>Portfólio Profissional</li>
+</ul>
+
+<h3>Exercícios</h3>
+
+<textarea>Crie uma apresentação para uma entrevista de emprego.</textarea>
+
+<textarea>Crie uma apresentação para divulgar um produto.</textarea>
+
+<textarea>Crie uma apresentação para uma reunião empresarial.</textarea>
+
+<textarea>Crie um portfólio profissional em slides.</textarea>
+
+<h3>Projeto Final</h3>
+
+<p>Desenvolver uma apresentação profissional completa contendo capa, objetivos, conteúdo, imagens, gráficos e conclusão.</p>
+
+<h3>Desafio Final</h3>
+
+<p>Apresentar um projeto profissional completo utilizando todas as técnicas aprendidas durante o curso.</p>
+
+</section>
+
+
+</div>
+
+<a href="#topo" class="voltar-topo">⬆</a>
+
+<script src="script.js"></script>
+
+</body>
+</html>

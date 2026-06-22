@@ -1,0 +1,452 @@
+body{
+    font-family:'Segoe UI',Arial,sans-serif;
+    margin:0;
+    background:#eef4ff;
+    color:#333;
+}
+
+/* BANNER */
+header{
+
+    position:relative;
+
+    height:450px;
+
+    overflow:hidden;
+
+}
+
+/* MENU */
+nav{
+    background:#06346d;
+    padding:15px;
+    position:sticky;
+    top:0;
+    z-index:999;
+    text-align:center;
+    box-shadow:0 2px 10px rgba(0,0,0,.15);
+}
+
+nav a{
+    color:#fff;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:600;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#7cc8ff;
+}
+
+/* CONTAINER */
+.container{
+    max-width:1250px;
+    margin:auto;
+    padding:25px;
+}
+
+/* CARDS */
+.card{
+    background:#fff;
+    border-radius:18px;
+    padding:35px;
+    margin-bottom:30px;
+    box-shadow:0 6px 25px rgba(0,0,0,.08);
+    border-top:6px solid #0a4ea3;
+}
+
+/* TITULOS */
+h2{
+    color:#0a4ea3;
+    font-size:34px;
+    margin-bottom:25px;
+    border-left:8px solid #0a4ea3;
+    padding-left:18px;
+}
+
+h3{
+    color:#06346d;
+    margin-top:35px;
+    margin-bottom:15px;
+    font-size:24px;
+}
+
+/* TEXTO */
+p{
+    line-height:1.8;
+    font-size:16px;
+}
+
+/* LISTAS */
+.lista-destaque{
+    background:#f7fbff;
+    border-left:5px solid #0a4ea3;
+    border-radius:12px;
+    padding:20px 20px 20px 40px;
+}
+
+.lista-destaque li{
+    margin-bottom:10px;
+}
+
+/* EXERCICIOS */
+.exercicio{
+    background:#f8fbff;
+    border-left:5px solid #0a4ea3;
+    border-radius:12px;
+    padding:18px;
+    margin-bottom:20px;
+    transition:.3s;
+}
+
+.exercicio:hover{
+    transform:translateY(-2px);
+    box-shadow:0 4px 15px rgba(10,78,163,.12);
+}
+
+.exercicio strong{
+    display:block;
+    color:#06346d;
+    font-size:17px;
+    margin-bottom:10px;
+}
+
+/* TEXTAREA */
+textarea{
+    width:100%;
+    min-height:100px;
+    border:2px solid #dbe7ff;
+    border-radius:10px;
+    padding:15px;
+    font-size:15px;
+    background:#fff;
+    box-sizing:border-box;
+    resize:vertical;
+    transition:.3s;
+}
+
+textarea:focus{
+    outline:none;
+    border-color:#0a4ea3;
+    box-shadow:0 0 12px rgba(10,78,163,.2);
+}
+
+/* LINKS */
+a{
+    color:#0a4ea3;
+    font-weight:600;
+}
+
+a:hover{
+    color:#06346d;
+}
+
+/* SCROLL */
+html{
+    scroll-behavior:smooth;
+}
+
+/* RESPONSIVO */
+@media(max-width:768px){
+
+    header{
+        height:140px;
+        background-size:cover;
+    }
+
+    h2{
+        font-size:26px;
+    }
+
+    h3{
+        font-size:20px;
+    }
+
+    nav a{
+        display:inline-block;
+        margin:5px;
+    }
+
+    .card{
+        padding:20px;
+    }
+}.menu-btn{
+    width:100%;
+    background:#06346d;
+    color:white;
+    border:none;
+    padding:15px;
+    text-align:left;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:bold;
+}
+
+.menu-btn:hover{
+    background:#0a4ea3;
+}
+
+.submenu{
+    display:none;
+    background:#f5f8ff;
+}
+
+.submenu a{
+    display:block;
+    padding:12px 25px;
+    text-decoration:none;
+    color:#06346d;
+    border-bottom:1px solid #ddd;
+}
+
+.submenu a:hover{
+    background:#e5eeff;
+}#login{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:#eef4ff;
+    z-index:999999;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.login-box{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 0 25px rgba(0,0,0,.2);
+    text-align:center;
+    min-width:350px;
+}
+
+.login-box input{
+    width:250px;
+    padding:10px;
+    margin:10px 0;
+    font-size:16px;
+}
+
+.login-box button{
+    padding:10px 20px;
+    cursor:pointer;
+    background:#0a4ea3;
+    color:white;
+    border:none;
+    border-radius:5px;
+}
+
+.login-box button:hover{
+    background:#06346d;
+}
+
+#erro{
+    color:red;
+    margin-top:10px;
+}.voltar-topo{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    width:55px;
+    height:55px;
+    background:#0a4ea3;
+    color:white;
+    text-decoration:none;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:24px;
+    font-weight:bold;
+    box-shadow:0 4px 15px rgba(0,0,0,.3);
+    z-index:99999;
+}
+
+.voltar-topo:hover{
+    background:#06346d;
+}
+
+/* MENU DAS AULAS */
+
+.menu-aulas{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:5px;
+
+    margin:10px 0;
+
+}
+
+.aula-btn{
+
+    background:#0a4ea3;
+
+    color:white;
+
+    border:none;
+
+    padding:10px 18px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.aula-btn:hover{
+
+    background:#06346d;
+
+}
+
+.aula-btn.ativa{
+
+    background:#06346d;
+
+    border-bottom:3px solid #7cc8ff;
+
+}
+
+.aula-ia,
+.aula-word,
+.aula-excel,
+.aula-ppt{
+    display:none;
+}
+
+.aula-ia,
+.aula-word,
+.aula-excel,
+.aula-ppt{
+    display:none !important;
+}
+
+.aula-ia.ativa,
+.aula-word.ativa,
+.aula-excel.ativa,
+.aula-ppt.ativa{
+    display:block !important;
+}
+
+.curso-menu{
+    display:none;
+    padding:15px;
+    background:#eef4ff;
+}
+
+.cursos-principais{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+    padding:20px;
+
+    background:#06346d;
+
+}
+
+.curso-btn{
+
+    background:#0a4ea3;
+
+    color:white;
+
+    border:none;
+
+    padding:15px 25px;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+.curso-btn:hover{
+
+    background:#1565c0;
+
+    transform:translateY(-2px);
+
+}
+
+.aula-btn{
+
+    background:#f5f8ff;
+
+    color:#06346d;
+
+    border:1px solid #c7dafd;
+
+    padding:6px 12px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    font-size:13px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+    margin:3px;
+
+}
+
+.slider{
+
+    width:100%;
+
+    height:100%;
+
+    position:relative;
+
+}
+
+.slide{
+
+    position:absolute;
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    opacity:0;
+
+    transition:opacity 1s ease-in-out;
+
+}
+
+.slide.ativo{
+
+    opacity:1;
+
+}
