@@ -450,3 +450,277 @@ html{
     opacity:1;
 
 }
+
+/* ===================================
+   ESTILO ULTRA PREMIUM DAS AULAS V2
+=================================== */
+
+.card{
+
+    animation:fadeIn .6s ease;
+
+}
+
+@keyframes fadeIn{
+
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+/* TÍTULO PRINCIPAL */
+
+.card h2{
+
+    background:linear-gradient(
+        135deg,
+        #0a4ea3,
+        #1976d2
+    );
+
+    color:white;
+
+    padding:22px 30px;
+
+    border-radius:18px;
+
+    border:none;
+
+    font-size:32px;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.15);
+
+    margin-bottom:35px;
+
+}
+
+/* TÍTULOS PADRÃO */
+
+.card h3{
+
+    background:linear-gradient(
+        135deg,
+        #e8f2ff,
+        #f8fbff
+    );
+
+    border-left:8px solid #1565c0;
+
+    padding:18px 25px;
+
+    border-radius:15px;
+
+    color:#06346d;
+
+    font-size:28px;
+
+    margin-top:35px;
+
+    margin-bottom:20px;
+
+    transition:.3s;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.05);
+
+}
+
+.card h3:hover{
+
+    transform:translateX(8px);
+
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+
+}
+
+/* OBJETIVOS */
+
+.objetivo{
+
+    background:linear-gradient(
+        135deg,
+        #e8fff1,
+        #f7fff9
+    ) !important;
+
+    border-left:8px solid #2ecc71 !important;
+
+}
+
+/* CRONOGRAMA */
+
+.cronograma{
+
+    background:linear-gradient(
+        135deg,
+        #e3f2fd,
+        #f5fbff
+    ) !important;
+
+    border-left:8px solid #2196f3 !important;
+
+}
+
+/* CONTEÚDO */
+
+.conteudo{
+
+    background:linear-gradient(
+        135deg,
+        #eef3ff,
+        #fafcff
+    ) !important;
+
+    border-left:8px solid #3f51b5 !important;
+
+}
+
+/* ATIVIDADES */
+
+.atividade{
+
+    background:linear-gradient(
+        135deg,
+        #fff4e5,
+        #fffaf3
+    ) !important;
+
+    border-left:8px solid #ff9800 !important;
+
+}
+
+/* DESAFIOS */
+
+.desafio{
+
+    background:linear-gradient(
+        135deg,
+        #ffebee,
+        #fff8f8
+    ) !important;
+
+    border-left:8px solid #f44336 !important;
+
+}
+
+/* FERRAMENTAS */
+
+.ferramenta{
+
+    background:linear-gradient(
+        135deg,
+        #f3e5f5,
+        #faf5ff
+    ) !important;
+
+    border-left:8px solid #9c27b0 !important;
+
+}
+
+/* LABORATÓRIO */
+
+.laboratorio{
+
+    background:linear-gradient(
+        135deg,
+        #fffde7,
+        #fffef5
+    ) !important;
+
+    border-left:8px solid #ffc107 !important;
+
+}
+
+/* TEXTO */
+
+.card p{
+
+    font-size:17px;
+
+    line-height:2;
+
+    color:#444;
+
+    text-align:justify;
+
+}
+
+/* LISTAS */
+
+.card ul{
+
+    background:#fafcff;
+
+    border:1px solid #e4ecff;
+
+    border-radius:15px;
+
+    padding:25px 25px 25px 45px;
+
+    margin:20px 0;
+
+}
+
+.card li{
+
+    margin-bottom:10px;
+
+    font-size:16px;
+
+}
+
+/* PROMPTS */
+
+textarea{
+
+    width:100%;
+
+    min-height:120px;
+
+    background:white;
+
+    border:none;
+
+    border-left:6px solid #1565c0;
+
+    border-radius:15px;
+
+    padding:18px;
+
+    font-size:15px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.05);
+
+    transition:.3s;
+
+}
+
+textarea:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+
+}
+
+textarea:focus{
+
+    outline:none;
+
+    box-shadow:0 0 20px rgba(21,101,192,.25);
+
+}
+
+/* CARD */
+
+.card:hover{
+
+    box-shadow:0 15px 40px rgba(0,0,0,.12);
+
+}
