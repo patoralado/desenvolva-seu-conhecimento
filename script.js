@@ -134,6 +134,15 @@ function abrirAulaPPT(id){
 
 }
 
+function abrirAulaKids(id){
+
+    esconderTodasAulas();
+
+    document.getElementById(id)
+    .classList.add('ativa');
+
+}
+
 let slideAtual = 0;
 
 const slides = document.querySelectorAll('.slide');
