@@ -325,21 +325,16 @@ html{
 .aula-ia,
 .aula-word,
 .aula-excel,
-.aula-ppt{
-    display:none;
-}
-
-.aula-ia,
-.aula-word,
-.aula-excel,
-.aula-ppt{
+.aula-ppt,
+.aula-kids{
     display:none !important;
 }
 
 .aula-ia.ativa,
 .aula-word.ativa,
 .aula-excel.ativa,
-.aula-ppt.ativa{
+.aula-ppt.ativa,
+.aula-kids.ativa{
     display:block !important;
 }
 
