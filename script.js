@@ -88,10 +88,19 @@ function abrirAulaPPT(id){
 
 }
 
+function abrirAulaKids(id){
+
+    esconderTodasAulas();
+
+    document.getElementById(id)
+    .classList.add('ativa');
+
+}
+
 function esconderTodasAulas(){
 
     document.querySelectorAll(
-        '.aula-ia, .aula-word, .aula-excel, .aula-ppt'
+        '.aula-ia, .aula-word, .aula-excel, .aula-ppt, .aula-kids'
     ).forEach(aula=>{
         aula.classList.remove('ativa');
     });
