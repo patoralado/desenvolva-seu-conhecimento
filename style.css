@@ -719,3 +719,31 @@ textarea:focus{
     box-shadow:0 15px 40px rgba(0,0,0,.12);
 
 }
+
+.objetivo{
+    color:#27ae60 !important;
+}
+
+.cronograma{
+    color:#2196f3 !important;
+}
+
+.conteudo{
+    color:#3f51b5 !important;
+}
+
+.atividade{
+    color:#f57c00 !important;
+}
+
+.laboratorio{
+    color:#d4a000 !important;
+}
+
+.desafio{
+    color:#e53935 !important;
+}
+
+.ferramenta{
+    color:#8e24aa !important;
+}
