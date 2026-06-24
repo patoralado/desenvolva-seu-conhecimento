@@ -97,61 +97,6 @@ function abrirAulaKids(id){
 
 }
 
-function esconderTodasAulas(){
-
-    document.querySelectorAll(
-        '.aula-ia, .aula-word, .aula-excel, .aula-ppt, .aula-kids'
-    ).forEach(aula=>{
-        aula.classList.remove('ativa');
-    });
-
-}
-
-function abrirAulaIA(id){
-
-    esconderTodasAulas();
-
-    document.getElementById(id)
-    .classList.add('ativa');
-
-}
-
-function abrirAulaWord(id){
-
-    esconderTodasAulas();
-
-    document.getElementById(id)
-    .classList.add('ativa');
-
-}
-
-function abrirAulaExcel(id){
-
-    esconderTodasAulas();
-
-    document.getElementById(id)
-    .classList.add('ativa');
-
-}
-
-function abrirAulaPPT(id){
-
-    esconderTodasAulas();
-
-    document.getElementById(id)
-    .classList.add('ativa');
-
-}
-
-function abrirAulaKids(id){
-
-    esconderTodasAulas();
-
-    document.getElementById(id)
-    .classList.add('ativa');
-
-}
-
 let slideAtual = 0;
 
 const slides = document.querySelectorAll('.slide');
