@@ -326,7 +326,8 @@ html{
 .aula-word,
 .aula-excel,
 .aula-ppt,
-.aula-kids{
+.aula-kids,
+.aula-canva{
     display:none !important;
 }
 
@@ -334,7 +335,8 @@ html{
 .aula-word.ativa,
 .aula-excel.ativa,
 .aula-ppt.ativa,
-.aula-kids.ativa{
+.aula-kids.ativa,
+.aula-canva.ativa{
     display:block !important;
 }
 

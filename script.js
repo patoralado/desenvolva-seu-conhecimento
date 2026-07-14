@@ -45,7 +45,7 @@ function abrirCurso(menuId){
 function esconderTodasAulas(){
 
     document.querySelectorAll(
-        '.aula-ia, .aula-word, .aula-excel, .aula-ppt, .aula-kids'
+        '.aula-ia, .aula-word, .aula-excel, .aula-ppt, .aula-kids, .aula-canva'
     ).forEach(aula=>{
         aula.classList.remove('ativa');
     });
